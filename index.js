@@ -171,7 +171,7 @@ IronWorker.postCode = function(project_id, name, runFilename, zipFilename) {
      var stream = fs.createReadStream(zipFilename);
      
      fs.stat(zipFilename , function(err,stat) {
-         request.addStream("file", zipFilename, "application/zip", stat.size, stream);
+         request.addStream("file", zipFilename, "text/plain", stat.size, stream);
          request.send(function(err, response) {
                     var data = "";
                     response.setEncoding("utf8");
