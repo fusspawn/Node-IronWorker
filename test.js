@@ -1,5 +1,5 @@
 var IronWorker = require("./index.js");
-IronWorker.init(null, null, 2, "QiVQ0a-e9qvhLLS5cpAr6j1Suvc", "http"); 
+IronWorker.init(null, null, 2, "*", "http"); 
 
 console.log("Code Section: Running.. ");
 console.log("Code: List");
